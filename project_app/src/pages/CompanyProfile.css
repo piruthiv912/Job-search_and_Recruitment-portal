@@ -1,0 +1,154 @@
+.company-profile-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #7f8c8d;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s;
+}
+
+.back-btn:hover {
+    color: #3498db;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.company-logo-large {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.2);
+}
+
+.company-title-section h1 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.industry-badge {
+    background-color: #f1f2f6;
+    color: #7f8c8d;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.info-section {
+    margin-bottom: 3rem;
+}
+
+.info-section h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.description-text {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detail-item .label {
+    font-size: 0.9rem;
+    color: #95a5a6;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.detail-item .value {
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.website-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+.website-link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.loading,
+.error-container {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #7f8c8d;
+}
+
+.error-container {
+    color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+    .company-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}

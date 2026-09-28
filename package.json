@@ -1,0 +1,24 @@
+{
+  "name": "placement-portal",
+  "version": "1.0.0",
+  "description": "College Placement Management System - MERN Stack",
+  "main": "project_server/server.js",
+  "scripts": {
+    "start": "cd project_server && node server.js",
+    "server": "cd project_server && npm start",
+    "server:dev": "cd project_server && npm run dev",
+    "client": "cd project_app && npm start",
+    "client:build": "cd project_app && npm run build",
+    "build": "cd project_app && npm run build",
+    "install:server": "cd project_server && npm install",
+    "install:client": "cd project_app && npm install",
+    "install:all": "npm run install:server && npm run install:client"
+  },
+  "keywords": [
+    "mern",
+    "placement-portal",
+    "recruitment-portal"
+  ],
+  "author": "",
+  "license": "ISC"
+}

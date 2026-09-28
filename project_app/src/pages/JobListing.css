@@ -1,0 +1,357 @@
+.job-listing-container {
+  padding: 4rem 2rem;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #eef2ff 0%, #f8fafc 40%);
+}
+
+.job-listing-container h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 3.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.job-card {
+  background: white;
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #f1f5f9;
+  position: relative;
+  overflow: hidden;
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: #6366f1;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.job-card h3 {
+  color: #1e293b;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.new-badge {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.company-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.company {
+  color: #6366f1;
+  font-weight: 700;
+  margin: 0;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.company-link:hover .company {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+.description {
+  color: #64748b;
+  font-size: 0.9375rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.job-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.job-details span {
+  background-color: #f1f5f9;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  color: #475569;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-tag {
+  background-color: #eef2ff;
+  color: #6366f1;
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.3);
+}
+
+.apply-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
+}
+
+/* Apply Form */
+.apply-form {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f1f5f9;
+  animation: slideInUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.apply-form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  margin-bottom: 1.25rem;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 0.9375rem;
+}
+
+.apply-form textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.apply-field-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+/* Resume Upload Section */
+.resume-upload-section {
+  margin-bottom: 1.25rem;
+}
+
+.resume-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.resume-hint {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: normal;
+}
+
+.resume-dropzone {
+  position: relative;
+}
+
+.resume-file-input {
+  display: none;
+}
+
+.resume-upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 12px;
+  color: #475569;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resume-upload-btn:hover {
+  background: #f1f5f9;
+  border-color: #6366f1;
+  color: #4f46e5;
+}
+
+.resume-selected-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 12px;
+  color: #065f46;
+}
+
+.resume-selected-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 85%;
+}
+
+.resume-remove-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+  line-height: 1;
+}
+
+.resume-remove-btn:hover {
+  background: #fee2e2;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.submit-btn {
+  flex: 2;
+  padding: 0.75rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 0.75rem;
+  background-color: #f1f5f9;
+  color: #64748b;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cancel-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.jobs-empty {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  color: #64748b;
+  background: white;
+  border: 1px dashed #e2e8f0;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.jobs-empty.error-state {
+  color: #b91c1c;
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .job-listing-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card {
+    padding: 1.5rem;
+  }
+}

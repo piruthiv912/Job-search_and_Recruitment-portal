@@ -1,0 +1,133 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  min-height: 64px;
+  gap: 1rem;
+}
+
+.nav-logo {
+  color: #1e293b;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+
+.nav-logo:hover {
+  transform: translateY(-1px);
+  color: #6366f1;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  transition: all 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: #1e293b;
+  background: #f1f5f9;
+}
+
+.nav-link.post-job-btn {
+  background: #6366f1;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.3);
+}
+
+.nav-link.post-job-btn:hover {
+  background: #4f46e5;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);
+}
+
+.register-btn {
+  background: #1e293b;
+  color: white !important;
+  padding: 0.625rem 1.25rem;
+  border-radius: 10px;
+}
+
+.register-btn:hover {
+  background: #0f172a !important;
+  transform: translateY(-1px);
+}
+
+.logout-btn {
+  color: #ef4444;
+  border: 1px solid #fee2e2;
+  background: #fff5f5;
+}
+
+.logout-btn:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.user-info {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  font-weight: 500;
+  background: #f8fafc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0.5rem 1.25rem;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .user-info {
+    display: none;
+  }
+
+  .nav-logo span {
+    display: none;
+  }
+}

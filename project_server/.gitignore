@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.*
+*.env
+!*.env.example
+!*.env.sample
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Local data & OS files
+mongo-data/
+.DS_Store

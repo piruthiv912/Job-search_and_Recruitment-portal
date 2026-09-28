@@ -1,0 +1,43 @@
+# Environment files
+.env
+.env.*
+*.env
+project_server/.env
+project_app/.env
+!*.env.example
+!*.env.sample
+
+# Node modules
+node_modules/
+project_app/node_modules/
+project_server/node_modules/
+
+# Production build artifacts
+project_app/build/
+build/
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS and IDE files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+
+# Temporary / testing files
+cookies.txt
+coverage/
+*.local
+project_server/mongo-data/
